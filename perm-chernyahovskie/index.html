@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Черняховские бани / бани и сауны в Перми</title>
+<meta name="description" content="Черняховские бани в Перми, Суперфосфатная, 20. Финская парная, бассейн, джакузи и комната отдыха. Обсудите дату посещения в мессенджере.">
+<meta name="theme-color" content="#191C15">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Manrope:wght@400&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero__media"><img src="img/hero.jpg" alt="Комната отдыха Черняховских бань из открытой карточки компании" fetchpriority="high"><div class="hero__veil"></div></div>
+  <div class="hero__content">
+    <div class="top">
+      <a class="logo rise" href="#" data-d="300">Черняховские бани</a>
+      <nav class="nav rise" data-d="420"><a href="#services">Услуги</a><a href="#tool">Посещение</a><a href="#contacts">Контакты</a></nav>
+    </div>
+    <div>
+      <h1 class="rise" data-d="900">Парная. Тишина.<br>Время для&nbsp;своих.</h1>
+      <p class="hero__lead rise" data-d="1040">Финская парная, бассейн и&nbsp;комната отдыха. Пермь, Суперфосфатная, 20.</p>
+      <div class="hero__cta rise" data-d="1200"><a class="btn " href="#tool" ><span class="btn__fill"></span><span class="btn__label">Выбрать день отдыха</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><span class="hero__sub">Свободное время подтвердит администратор</span></div>
+    </div>
+  </div>
+</header>
+<main>
+<section id="services">
+  <div class="head"><h2 class="rise">После суеты —<br>в&nbsp;парную</h2><p class="muted rise">Оснащение по&nbsp;карточке в&nbsp;2ГИС. Уточните выбранный зал и&nbsp;условия посещения перед визитом.</p></div>
+  <div class="rows"><div class="row rise"><span class="row__n">01</span><h3>Финская парная</h3><p class="muted">Отдых в&nbsp;сауне с&nbsp;предварительным согласованием времени.</p></div><div class="row rise"><span class="row__n">02</span><h3>Бассейн и&nbsp;джакузи</h3><p class="muted">Наличие в&nbsp;выбранном зале и&nbsp;условия использования уточнит администратор.</p></div><div class="row rise"><span class="row__n">03</span><h3>Комната отдыха</h3><p class="muted">Место, чтобы провести время вместе между заходами в&nbsp;парную.</p></div><div class="row rise"><span class="row__n">04</span><h3>Общественная баня</h3><p class="muted">Четверг — воскресенье, с&nbsp;09:00&nbsp;до&nbsp;21:00&nbsp;по&nbsp;расписанию в&nbsp;2ГИС.</p></div><div class="row rise"><span class="row__n">05</span><h3>Банные принадлежности</h3><p class="muted">Веники, полотенца, простыни и&nbsp;тапочки. Наличие и&nbsp;стоимость уточняются при&nbsp;обращении.</p></div></div>
+</section>
+<section class="tool" id="tool">
+  <div class="tool__grid">
+    <div class="steps">
+      <div class="head"><h2 class="rise">Ваш&nbsp;день<br>в&nbsp;бане</h2></div>
+      <p class="muted rise">Выберите формат, дату и&nbsp;пожелания. Откройте мессенджер и&nbsp;отправьте готовый запрос администратору.</p>
+      <form id="tool-form" class="steps" onsubmit="return false"><fieldset class="field rise"><span>Формат отдыха</span><div class="chips"><label class="chip"><input type="radio" name="format" value="Сауна для компании" checked><span>Сауна для&nbsp;компании</span></label><label class="chip"><input type="radio" name="format" value="Общественная баня"><span>Общественная баня</span></label><label class="chip"><input type="radio" name="format" value="Нужна консультация"><span>Нужна консультация</span></label></div></fieldset><label class="field rise"><span>Желаемая дата</span><input class="text" type="date" name="date" placeholder=""></label><label class="field rise"><span>Время и&nbsp;продолжительность</span><input class="text" type="text" name="time" placeholder="Например: с 18:00 на 2 часа"></label><label class="field rise"><span>Сколько гостей</span><div class="range"><input type="range" name="guests" min="1" max="10" step="1" value="4"><output id="guests-out">4</output></div></label><fieldset class="field rise"><span>Что&nbsp;понадобится</span><div class="chips"><label class="chip"><input type="checkbox" name="extras" value="Веники"><span>Веники</span></label><label class="chip"><input type="checkbox" name="extras" value="Полотенца"><span>Полотенца</span></label><label class="chip"><input type="checkbox" name="extras" value="Простыни"><span>Простыни</span></label><label class="chip"><input type="checkbox" name="extras" value="Тапочки"><span>Тапочки</span></label></div></fieldset><label class="field rise"><span>Как&nbsp;к&nbsp;вам&nbsp;обращаться</span><input class="text" type="text" name="name" placeholder="Имя"></label></form>
+    </div>
+    <aside class="ticket">
+      <div class="ticket__card rise">
+        <span class="label">Ваша заявка</span>
+        <ul class="ticket__lines" id="lines"></ul>
+        <div class="send"><a class="btn btn--ghost" href="https://t.me/+79922007422" data-send="telegram" target="_blank" rel="noopener"><span class="btn__fill"></span><span class="btn__label">Написать в&nbsp;Telegram</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="https://max.ru/u/f9LHodD0cOKoFG5iwez72Ii_4af8SMZnM-Sj1C1kfvl1SwaixmuWgDSTbIk" data-send="max" target="_blank" rel="noopener"><span class="btn__fill"></span><span class="btn__label">Написать в&nbsp;MAX</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="tel:+73422715573" ><span class="btn__fill"></span><span class="btn__label">Позвонить</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+        <p><small id="copied">Дата и&nbsp;время здесь — пожелание. Зал, стоимость и&nbsp;бронь подтверждает администратор. Без&nbsp;оплаты на&nbsp;сайте.</small></p>
+      </div>
+    </aside>
+  </div>
+</section>
+<section id="about">
+  <div class="head"><h2 class="rise">Место<br>для&nbsp;отдыха</h2><p class="muted rise">Данные из&nbsp;открытой карточки 2ГИС на&nbsp;4&nbsp;октября 2026&nbsp;года. Вместимость и&nbsp;доступность выбранного зала уточняйте при&nbsp;записи.</p></div>
+  <div class="facts"><div class="fact rise"><b>4,9</b><p class="muted">рейтинг в&nbsp;2ГИС</p></div><div class="fact rise"><b>до&nbsp;10</b><p class="muted">гостей — по&nbsp;карточке компании</p></div><div class="fact rise"><b>213</b><p class="muted">отзывов в&nbsp;2ГИС</p></div></div>
+  
+</section>
+<section id="contacts">
+  <div class="contacts">
+    <h2 class="rise">На&nbsp;Суперфосфатной,<br>20</h2>
+    <div class="clist rise"><a href="tel:+73422715573"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+7 342 271-55-73</a><a href="https://t.me/+79922007422" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Telegram</a><a href="https://max.ru/u/f9LHodD0cOKoFG5iwez72Ii_4af8SMZnM-Sj1C1kfvl1SwaixmuWgDSTbIk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>MAX</a><a href="https://2gis.ru/perm/firm/2252328094718223" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Пермь, Суперфосфатная улица, 20</a><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Сауна — круглосуточно, время уточняйте при&nbsp;бронировании. Общественная баня: чт–вс 09:00–21:00.</span></div>
+  </div>
+</section>
+</main>
+<footer><span>Черняховские бани, Пермь</span><span>Демо-версия сайта. Фото и тексты из открытой карточки 2ГИС, заменим на ваши.</span></footer>
+<script type="application/json" id="cfg">{"greeting": "Здравствуйте! Хочу обсудить посещение «Черняховских бань».", "whatsapp": null, "fields": [{"id": "format", "type": "single", "title": "Формат отдыха"}, {"id": "date", "type": "date", "title": "Желаемая дата"}, {"id": "time", "type": "text", "title": "Время и продолжительность"}, {"id": "guests", "type": "range", "title": "Сколько гостей", "unit": "чел."}, {"id": "extras", "type": "multi", "title": "Что понадобится"}, {"id": "name", "type": "text", "title": "Как к вам обращаться"}]}</script>
+<script src="script.js"></script>
+</body>
+</html>
