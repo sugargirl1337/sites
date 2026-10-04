@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Рифэлия / столовая и банкеты в Менделеевске</title>
+<meta name="description" content="Столовая Рифэлия в Менделеевске: халяльная кухня, бизнес-ланч, банкеты до 100 гостей и поминальные обеды.">
+<meta name="theme-color" content="#f5f4ef">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Manrope:wght@400&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero__media"><img src="img/hero.jpg" alt="Банкетный стол Рифэлии с закусками, фруктами и выпечкой" fetchpriority="high"><div class="hero__veil"></div></div>
+  <div class="hero__content">
+    <div class="top">
+      <a class="logo rise" href="#" data-d="300">Рифэлия</a>
+      <nav class="nav rise" data-d="420"><a href="#services">Услуги</a><a href="#tool">Банкет</a><a href="#contacts">Контакты</a></nav>
+    </div>
+    <div>
+      <h1 class="rise" data-d="900">Накроем стол<br>на&nbsp;сто гостей</h1>
+      <p class="hero__lead rise" data-d="1040">Халяльная кухня в&nbsp;Менделеевске: праздники, поминальные обеды и&nbsp;бизнес-ланч.</p>
+      <div class="hero__cta rise" data-d="1200"><a class="btn " href="#tool" ><span class="btn__fill"></span><span class="btn__label">Рассчитать банкет</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><span class="hero__sub">Ответим в&nbsp;WhatsApp</span></div>
+    </div>
+  </div>
+</header>
+<main>
+<section id="services">
+  <div class="head"><h2 class="rise">Накроем стол<br>к&nbsp;любому поводу</h2><p class="muted rise">Собрано по&nbsp;вашей карточке 2ГИС. Меню и&nbsp;фото зала добавим в&nbsp;рабочей версии.</p></div>
+  <div class="rows"><div class="row rise"><span class="row__n">01</span><h3>Банкеты до&nbsp;100&nbsp;гостей</h3><p class="muted">Свадьбы, никах, юбилеи и&nbsp;дни рождения.</p></div><div class="row rise"><span class="row__n">02</span><h3>Поминальные обеды</h3><p class="muted">Спокойно подготовим всё по&nbsp;традиции.</p></div><div class="row rise"><span class="row__n">03</span><h3>Халяльная кухня</h3><p class="muted">Блюда готовим по&nbsp;правилам халяль.</p></div><div class="row rise"><span class="row__n">04</span><h3>Бизнес-ланч</h3><p class="muted">С&nbsp;11&nbsp;до&nbsp;14, от&nbsp;150&nbsp;₽ по&nbsp;данным карточки.</p></div><div class="row rise"><span class="row__n">05</span><h3>Навынос</h3><p class="muted">Обед, кофе и&nbsp;чай с&nbsp;собой.</p></div></div>
+</section>
+<section class="tool" id="tool">
+  <div class="tool__grid">
+    <div class="steps">
+      <div class="head"><h2 class="rise">Заявка<br>на&nbsp;банкет</h2></div>
+      <p class="muted rise">Повод, дата и&nbsp;число гостей. Мы&nbsp;получим заявку и&nbsp;предложим меню.</p>
+      <form id="tool-form" class="steps" onsubmit="return false"><fieldset class="field rise"><span>Повод</span><div class="chips"><label class="chip"><input type="radio" name="occasion" value="День рождения" checked><span>День рождения</span></label><label class="chip"><input type="radio" name="occasion" value="Свадьба или никах"><span>Свадьба или&nbsp;никах</span></label><label class="chip"><input type="radio" name="occasion" value="Юбилей"><span>Юбилей</span></label><label class="chip"><input type="radio" name="occasion" value="Поминальный обед"><span>Поминальный обед</span></label><label class="chip"><input type="radio" name="occasion" value="Корпоратив"><span>Корпоратив</span></label></div></fieldset><label class="field rise"><span>Дата</span><input class="text" type="date" name="date" placeholder=""></label><label class="field rise"><span>Сколько гостей</span><div class="range"><input type="range" name="guests" min="10" max="100" step="5" value="40"><output id="guests-out">40</output></div></label><label class="field rise"><span>Как&nbsp;к&nbsp;вам&nbsp;обращаться</span><input class="text" type="text" name="name" placeholder="Имя"></label></form>
+    </div>
+    <aside class="ticket">
+      <div class="ticket__card rise">
+        <span class="label">Ваша заявка</span>
+        <ul class="ticket__lines" id="lines"></ul>
+        <div class="send"><a class="btn " href="#" data-send="whatsapp"><span class="btn__fill"></span><span class="btn__label">Отправить в&nbsp;WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="https://t.me/kamalova_gula" data-send="telegram" target="_blank" rel="noopener"><span class="btn__fill"></span><span class="btn__label">Написать в&nbsp;Telegram</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="tel:+79033195872" ><span class="btn__fill"></span><span class="btn__label">Позвонить</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+        <p><small id="copied">Меню и&nbsp;стоимость обсудим лично</small></p>
+      </div>
+    </aside>
+  </div>
+</section>
+<section id="about">
+  <div class="head"><h2 class="rise">Рифэлия<br>в&nbsp;цифрах</h2><p class="muted rise">Данные из&nbsp;открытой карточки 2ГИС на&nbsp;4&nbsp;октября 2026&nbsp;года.</p></div>
+  <div class="facts"><div class="fact rise"><b>4,9</b><p class="muted">рейтинг в&nbsp;2ГИС по&nbsp;30&nbsp;отзывам</p></div><div class="fact rise"><b>100</b><p class="muted">мест в&nbsp;зале</p></div><div class="fact rise"><b>150&nbsp;₽</b><p class="muted">бизнес-ланч, нижняя цена по&nbsp;карточке</p></div><div class="fact rise"><b>7–16</b><p class="muted">открыты каждый день</p></div></div>
+  
+</section>
+<section id="contacts">
+  <div class="contacts">
+    <h2 class="rise">Как&nbsp;с&nbsp;нами<br>связаться</h2>
+    <div class="clist rise"><a href="tel:+79033195872"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+7 903 319-58-72</a><a href="https://wa.me/79033195872" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>WhatsApp</a><a href="https://t.me/kamalova_gula" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Telegram</a><a href="https://2gis.ru/mendeleevsk/firm/70000001067224883" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Менделеевск</a><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Ежедневно с&nbsp;7:00&nbsp;до&nbsp;16:00</span></div>
+  </div>
+</section>
+</main>
+<footer><span>Рифэлия, Менделеевск</span><span>Демо-версия сайта. Фото и тексты из открытой карточки 2ГИС, заменим на ваши.</span></footer>
+<script type="application/json" id="cfg">{"greeting": "Здравствуйте! Хочу заказать банкет в Рифэлии.", "whatsapp": "79033195872", "fields": [{"id": "occasion", "type": "single", "title": "Повод"}, {"id": "date", "type": "date", "title": "Дата"}, {"id": "guests", "type": "range", "title": "Сколько гостей", "unit": "чел."}, {"id": "name", "type": "text", "title": "Как к вам обращаться"}]}</script>
+<script src="script.js"></script>
+</body>
+</html>

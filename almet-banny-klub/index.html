@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Банный клуб / баня в Альметьевске</title>
+<meta name="description" content="Баня в Альметьевске на Рыжикова, 26: русская парная на дровах, хаммам, бассейн и банный чан. Компании до 20 человек, круглосуточно.">
+<meta name="theme-color" content="#1b1412">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Manrope:wght@400&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero__media"><img src="img/hero.jpg" alt="Зал отдыха Банного клуба: деревянные стены и длинный стол" fetchpriority="high"><div class="hero__veil"></div></div>
+  <div class="hero__content">
+    <div class="top">
+      <a class="logo rise" href="#" data-d="300">Банный клуб</a>
+      <nav class="nav rise" data-d="420"><a href="#services">Услуги</a><a href="#tool">Бронь</a><a href="#contacts">Контакты</a></nav>
+    </div>
+    <div>
+      <h1 class="rise" data-d="900">Пар на&nbsp;дровах,<br>чан и&nbsp;купель</h1>
+      <p class="hero__lead rise" data-d="1040">Баня на&nbsp;Рыжикова для&nbsp;компании до&nbsp;20&nbsp;человек. Работаем круглосуточно.</p>
+      <div class="hero__cta rise" data-d="1200"><a class="btn " href="#tool" ><span class="btn__fill"></span><span class="btn__label">Забронировать время</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><span class="hero__sub">Ответим в&nbsp;WhatsApp</span></div>
+    </div>
+  </div>
+</header>
+<main>
+<section id="services">
+  <div class="head"><h2 class="rise">Всё для&nbsp;долгого<br>вечера в&nbsp;бане</h2><p class="muted rise">Список составлен по&nbsp;вашей карточке 2ГИС. В&nbsp;рабочей версии добавим фото каждой зоны и&nbsp;цены.</p></div>
+  <div class="rows"><div class="row rise"><span class="row__n">01</span><h3>Русская парная на&nbsp;дровах</h3><p class="muted">Классический жар и&nbsp;веники. Полотенца, простыни и&nbsp;тапочки уже на&nbsp;месте.</p></div><div class="row rise"><span class="row__n">02</span><h3>Хаммам и&nbsp;инфракрасная сауна</h3><p class="muted">Мягкий пар для&nbsp;тех, кто не&nbsp;любит высокую температуру.</p></div><div class="row rise"><span class="row__n">03</span><h3>Бассейн, купели и&nbsp;банный чан</h3><p class="muted">Можно остыть после парной, гидромассаж в&nbsp;бассейне.</p></div><div class="row rise"><span class="row__n">04</span><h3>Комната отдыха и&nbsp;караоке</h3><p class="muted">Большой стол, телевизор и&nbsp;Wi-Fi. Чай есть в&nbsp;любое время.</p></div><div class="row rise"><span class="row__n">05</span><h3>Беседки и&nbsp;мангал</h3><p class="muted">Можно продолжить на&nbsp;улице, если позволяет погода.</p></div></div>
+</section>
+<section class="tool" id="tool">
+  <div class="tool__grid">
+    <div class="steps">
+      <div class="head"><h2 class="rise">Соберите бронь<br>за&nbsp;минуту</h2></div>
+      <p class="muted rise">Выберите дату, время и&nbsp;зоны. Готовая заявка уйдёт администратору в&nbsp;WhatsApp, переписывать ничего не&nbsp;придётся.</p>
+      <form id="tool-form" class="steps" onsubmit="return false"><label class="field rise"><span>Дата</span><input class="text" type="date" name="date" placeholder=""></label><fieldset class="field rise"><span>Когда начнём</span><div class="chips"><label class="chip"><input type="radio" name="start" value="Днём"><span>Днём</span></label><label class="chip"><input type="radio" name="start" value="Вечером" checked><span>Вечером</span></label><label class="chip"><input type="radio" name="start" value="Ночью"><span>Ночью</span></label></div></fieldset><label class="field rise"><span>Сколько часов</span><div class="range"><input type="range" name="hours" min="2" max="8" step="1" value="3"><output id="hours-out">3</output></div></label><label class="field rise"><span>Сколько гостей</span><div class="range"><input type="range" name="guests" min="2" max="20" step="1" value="6"><output id="guests-out">6</output></div></label><fieldset class="field rise"><span>Что&nbsp;нужно</span><div class="chips"><label class="chip"><input type="checkbox" name="extras" value="Русская парная"><span>Русская парная</span></label><label class="chip"><input type="checkbox" name="extras" value="Хаммам"><span>Хаммам</span></label><label class="chip"><input type="checkbox" name="extras" value="Банный чан"><span>Банный чан</span></label><label class="chip"><input type="checkbox" name="extras" value="Караоке"><span>Караоке</span></label><label class="chip"><input type="checkbox" name="extras" value="Мангал"><span>Мангал</span></label><label class="chip"><input type="checkbox" name="extras" value="Веники"><span>Веники</span></label></div></fieldset><label class="field rise"><span>Как&nbsp;к&nbsp;вам&nbsp;обращаться</span><input class="text" type="text" name="name" placeholder="Имя"></label></form>
+    </div>
+    <aside class="ticket">
+      <div class="ticket__card rise">
+        <span class="label">Ваша заявка</span>
+        <ul class="ticket__lines" id="lines"></ul>
+        <div class="send"><a class="btn " href="#" data-send="whatsapp"><span class="btn__fill"></span><span class="btn__label">Отправить в&nbsp;WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="https://t.me/+79196364242" data-send="telegram" target="_blank" rel="noopener"><span class="btn__fill"></span><span class="btn__label">Написать в&nbsp;Telegram</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="tel:+79196364242" ><span class="btn__fill"></span><span class="btn__label">Позвонить</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+        <p><small id="copied">Бронь подтверждает администратор, без&nbsp;предоплаты на&nbsp;сайте</small></p>
+      </div>
+    </aside>
+  </div>
+</section>
+<section id="about">
+  <div class="head"><h2 class="rise">Банный клуб<br>в&nbsp;цифрах</h2><p class="muted rise">Данные из&nbsp;открытой карточки 2ГИС на&nbsp;4&nbsp;октября 2026&nbsp;года.</p></div>
+  <div class="facts"><div class="fact rise"><b>4,7</b><p class="muted">рейтинг в&nbsp;2ГИС по&nbsp;87&nbsp;отзывам</p></div><div class="fact rise"><b>24/7</b><p class="muted">открыто круглосуточно, без&nbsp;выходных</p></div><div class="fact rise"><b>20</b><p class="muted">гостей помещается в&nbsp;одной компании</p></div><div class="fact rise"><b>1&nbsp;200&nbsp;₽</b><p class="muted">нижняя граница цены за&nbsp;час по&nbsp;карточке</p></div></div>
+  
+</section>
+<section id="contacts">
+  <div class="contacts">
+    <h2 class="rise">Как&nbsp;нас<br>найти</h2>
+    <div class="clist rise"><a href="tel:+79196364242"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+7 919 636-42-42</a><a href="https://wa.me/79046656898" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>WhatsApp</a><a href="https://t.me/+79196364242" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Telegram</a><a href="https://2gis.ru/almetevsk/firm/70000001028613705" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Альметьевск, улица Рыжикова, 26</a><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Круглосуточно, без&nbsp;выходных</span></div>
+  </div>
+</section>
+</main>
+<footer><span>Банный клуб, Альметьевск</span><span>Демо-версия сайта. Фото и тексты из открытой карточки 2ГИС, заменим на ваши.</span></footer>
+<script type="application/json" id="cfg">{"greeting": "Здравствуйте! Хочу забронировать Банный клуб.", "whatsapp": "79046656898", "fields": [{"id": "date", "type": "date", "title": "Дата"}, {"id": "start", "type": "single", "title": "Когда начнём"}, {"id": "hours", "type": "range", "title": "Сколько часов", "unit": "ч"}, {"id": "guests", "type": "range", "title": "Сколько гостей", "unit": "чел."}, {"id": "extras", "type": "multi", "title": "Что нужно"}, {"id": "name", "type": "text", "title": "Как к вам обращаться"}]}</script>
+<script src="script.js"></script>
+</body>
+</html>
