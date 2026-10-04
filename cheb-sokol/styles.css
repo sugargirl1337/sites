@@ -10,8 +10,8 @@
   --s1: 8px; --s2: 16px; --s3: 24px; --s4: 40px; --s5: 64px; --s6: 112px;
   --display: 'Wix Madefor Display', sans-serif;
   --body: 'Wix Madefor Text', sans-serif;
-  --hero-ink: #22201e;
-  --hero-shadow: 0 0 2px rgba(255, 255, 255, .9), 0 0 28px rgba(255, 255, 255, .9);
+  --hero-ink: #ffffff;
+  --hero-shadow: 0 1px 24px rgba(0, 0, 0, .45);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
