@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ВкусНата / торты на заказ в Стерлитамаке</title>
+<meta name="description" content="ВкусНата: торты на заказ в Стерлитамаке, улица Нагуманова, 33а. Торты и десерты на заказ. Соберите заказ на сайте, кондитер уточнит детали.">
+<meta name="theme-color" content="#191011">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Manrope:wght@400&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero__media"><img src="img/hero.jpg" alt="ВкусНата, торты на заказ" fetchpriority="high"><div class="hero__veil"></div></div>
+  <div class="hero__content">
+    <div class="top">
+      <a class="logo rise" href="#" data-d="300">ВкусНата</a>
+      <nav class="nav rise" data-d="420"><a href="#services">Услуги</a><a href="#tool">Заказ</a><a href="#contacts">Контакты</a></nav>
+    </div>
+    <div>
+      <h1 class="rise" data-d="900">Торт, который<br>запомнят гости</h1>
+      <p class="hero__lead rise" data-d="1040">улица Нагуманова. Торты и&nbsp;десерты на&nbsp;заказ. Соберите заказ на&nbsp;сайте, кондитер уточнит детали.</p>
+      <div class="hero__cta rise" data-d="1200"><a class="btn " href="#tool" ><span class="btn__fill"></span><span class="btn__label">Собрать торт</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><span class="hero__sub">Ответим в&nbsp;WhatsApp</span></div>
+    </div>
+  </div>
+</header>
+<main>
+<section id="services">
+  <div class="head"><h2 class="rise">Что&nbsp;можно<br>заказать</h2><p class="muted rise">Собрано по&nbsp;вашей карточке 2ГИС. Цены и&nbsp;детали добавим в&nbsp;рабочей версии.</p></div>
+  <div class="rows"><div class="row rise"><span class="row__n">01</span><h3>Торты на&nbsp;заказ</h3><p class="muted">Ярусные торты к&nbsp;свадьбе, юбилею и&nbsp;детскому празднику.</p></div><div class="row rise"><span class="row__n">02</span><h3>Бенто-торты</h3><p class="muted">Маленький торт, чтобы поздравить без&nbsp;повода.</p></div><div class="row rise"><span class="row__n">03</span><h3>Фототорты</h3><p class="muted">Фото или&nbsp;надпись прямо на&nbsp;торте.</p></div><div class="row rise"><span class="row__n">04</span><h3>Доставка</h3><p class="muted">Привезём торт к&nbsp;нужному времени.</p></div></div>
+</section>
+<section class="tool" id="tool">
+  <div class="tool__grid">
+    <div class="steps">
+      <div class="head"><h2 class="rise">Соберите торт<br>за&nbsp;минуту</h2></div>
+      <p class="muted rise">Повод, вес и&nbsp;дата. Кондитер получит заявку с&nbsp;параметрами и&nbsp;рассчитает стоимость.</p>
+      <form id="tool-form" class="steps" onsubmit="return false"><fieldset class="field rise"><span>Что&nbsp;заказываем</span><div class="chips"><label class="chip"><input type="radio" name="kind" value="Торт" checked><span>Торт</span></label><label class="chip"><input type="radio" name="kind" value="Бенто-торт"><span>Бенто-торт</span></label><label class="chip"><input type="radio" name="kind" value="Десерты к столу"><span>Десерты к&nbsp;столу</span></label></div></fieldset><fieldset class="field rise"><span>Повод</span><div class="chips"><label class="chip"><input type="radio" name="occasion" value="День рождения" checked><span>День рождения</span></label><label class="chip"><input type="radio" name="occasion" value="Свадьба"><span>Свадьба</span></label><label class="chip"><input type="radio" name="occasion" value="Юбилей"><span>Юбилей</span></label><label class="chip"><input type="radio" name="occasion" value="Детский праздник"><span>Детский праздник</span></label><label class="chip"><input type="radio" name="occasion" value="Без повода"><span>Без&nbsp;повода</span></label></div></fieldset><label class="field rise"><span>Примерный вес</span><div class="range"><input type="range" name="weight" min="1" max="10" step="0.5" value="2"><output id="weight-out">2</output></div></label><label class="field rise"><span>К&nbsp;какой дате</span><input class="text" type="date" name="date" placeholder=""></label><fieldset class="field rise"><span>Добавить</span><div class="chips"><label class="chip"><input type="checkbox" name="extras" value="Надпись"><span>Надпись</span></label><label class="chip"><input type="checkbox" name="extras" value="Фото на торте"><span>Фото на&nbsp;торте</span></label><label class="chip"><input type="checkbox" name="extras" value="Ягоды"><span>Ягоды</span></label><label class="chip"><input type="checkbox" name="extras" value="Доставка"><span>Доставка</span></label></div></fieldset><label class="field rise"><span>Как&nbsp;к&nbsp;вам&nbsp;обращаться</span><input class="text" type="text" name="name" placeholder="Имя"></label></form>
+    </div>
+    <aside class="ticket">
+      <div class="ticket__card rise">
+        <span class="label">Ваша заявка</span>
+        <ul class="ticket__lines" id="lines"></ul>
+        <div class="send"><a class="btn " href="#" data-send="whatsapp"><span class="btn__fill"></span><span class="btn__label">Отправить в&nbsp;WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="https://t.me/+79876076638" data-send="telegram" target="_blank" rel="noopener"><span class="btn__fill"></span><span class="btn__label">Написать в&nbsp;Telegram</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="https://max.ru/u/f9LHodD0cOJQf2DdG7Y0FYDZfhVH0wzVkQ_Bc_LlENmZmJG9yt_ke_cBnXY" data-send="max" target="_blank" rel="noopener"><span class="btn__fill"></span><span class="btn__label">Написать в&nbsp;MAX</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="tel:+79876076638" ><span class="btn__fill"></span><span class="btn__label">Позвонить</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+        <p><small id="copied">Стоимость рассчитает кондитер, предоплата по&nbsp;договорённости</small></p>
+      </div>
+    </aside>
+  </div>
+</section>
+<section id="about">
+  <div class="head"><h2 class="rise">ВкусНата<br>в&nbsp;цифрах</h2><p class="muted rise">Данные из&nbsp;открытой карточки 2ГИС на&nbsp;4&nbsp;октября 2026&nbsp;года.</p></div>
+  <div class="facts"><div class="fact rise"><b>5,0</b><p class="muted">рейтинг в&nbsp;2ГИС по&nbsp;99&nbsp;отзывам</p></div><div class="fact rise"><b>09–20</b><p class="muted">работаем каждый день</p></div><div class="fact rise"><b>99</b><p class="muted">отзывов гостей в&nbsp;2ГИС</p></div></div>
+  <div class="gallery"><figure><img src="img/g1.jpg" alt="ВкусНата" loading="lazy"></figure><figure><img src="img/g2.jpg" alt="ВкусНата" loading="lazy"></figure><figure><img src="img/g3.jpg" alt="ВкусНата" loading="lazy"></figure></div>
+</section>
+<section id="contacts">
+  <div class="contacts">
+    <h2 class="rise">Как&nbsp;нас<br>найти</h2>
+    <div class="clist rise"><a href="tel:+79876076638"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+7 987 607-66-38</a><a href="https://wa.me/79876076638" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>WhatsApp</a><a href="https://t.me/+79876076638" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Telegram</a><a href="https://max.ru/u/f9LHodD0cOJQf2DdG7Y0FYDZfhVH0wzVkQ_Bc_LlENmZmJG9yt_ke_cBnXY" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>MAX</a><a href="https://2gis.ru/firm/70000001044831958" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Стерлитамак, улица Нагуманова, 33а</a><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Ежедневно 09:00–20:00</span></div>
+  </div>
+</section>
+</main>
+<footer><span>ВкусНата, Стерлитамак</span><span>Демо-версия сайта. Фото и тексты из открытой карточки 2ГИС, заменим на ваши.</span></footer>
+<script type="application/json" id="cfg">{"greeting": "Здравствуйте! Хочу заказать торт в «ВкусНата».", "whatsapp": "79876076638", "fields": [{"id": "kind", "type": "single", "title": "Что заказываем"}, {"id": "occasion", "type": "single", "title": "Повод"}, {"id": "weight", "type": "range", "title": "Примерный вес", "unit": "кг"}, {"id": "date", "type": "date", "title": "К какой дате"}, {"id": "extras", "type": "multi", "title": "Добавить"}, {"id": "name", "type": "text", "title": "Как к вам обращаться"}]}</script>
+<script src="script.js"></script>
+</body>
+</html>

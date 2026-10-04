@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>СТО Машин / шиномонтаж в Йошкар-Оле</title>
+<meta name="description" content="СТО Машин: шиномонтаж в Йошкар-Оле, Комсомольская улица, 77/2. Сезонная переобувка, балансировка и ремонт. Запишитесь на удобное время.">
+<meta name="theme-color" content="#141414">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Golos+Text:wght@400&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero__media"><img src="img/hero.jpg" alt="СТО Машин, шиномонтаж" fetchpriority="high"><div class="hero__veil"></div></div>
+  <div class="hero__content">
+    <div class="top">
+      <a class="logo rise" href="#" data-d="300">СТО Машин</a>
+      <nav class="nav rise" data-d="420"><a href="#services">Услуги</a><a href="#tool">Запись</a><a href="#contacts">Контакты</a></nav>
+    </div>
+    <div>
+      <h1 class="rise" data-d="900">Шины и&nbsp;сервис<br>на&nbsp;Комсомольской</h1>
+      <p class="hero__lead rise" data-d="1040">Комсомольская улица. Сезонная переобувка, балансировка и&nbsp;ремонт. Запишитесь на&nbsp;удобное время.</p>
+      <div class="hero__cta rise" data-d="1200"><a class="btn " href="#tool" ><span class="btn__fill"></span><span class="btn__label">Записаться на&nbsp;шиномонтаж</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><span class="hero__sub">Ответим в&nbsp;WhatsApp</span></div>
+    </div>
+  </div>
+</header>
+<main>
+<section id="services">
+  <div class="head"><h2 class="rise">Что<br>делаем</h2><p class="muted rise">Собрано по&nbsp;вашей карточке 2ГИС. Цены и&nbsp;детали добавим в&nbsp;рабочей версии.</p></div>
+  <div class="rows"><div class="row rise"><span class="row__n">01</span><h3>Сезонная переобувка</h3><p class="muted">Снимем, смонтируем и&nbsp;отбалансируем.</p></div><div class="row rise"><span class="row__n">02</span><h3>Балансировка</h3><p class="muted">Чтобы руль не&nbsp;бил на&nbsp;скорости.</p></div><div class="row rise"><span class="row__n">03</span><h3>Ремонт проколов</h3><p class="muted">Жгут или&nbsp;латка изнутри.</p></div><div class="row rise"><span class="row__n">04</span><h3>Хранение шин</h3><p class="muted">Заберём на&nbsp;сезон, вернём чистыми.</p></div><div class="row rise"><span class="row__n">05</span><h3>Автосервис</h3><p class="muted">Диагностика, развал-схождение и&nbsp;ремонт.</p></div></div>
+</section>
+<section class="tool" id="tool">
+  <div class="tool__grid">
+    <div class="steps">
+      <div class="head"><h2 class="rise">Запись<br>на&nbsp;время</h2></div>
+      <p class="muted rise">Машина, радиус и&nbsp;услуга. Мастер получит заявку и&nbsp;подтвердит время.</p>
+      <form id="tool-form" class="steps" onsubmit="return false"><fieldset class="field rise"><span>Машина</span><div class="chips"><label class="chip"><input type="radio" name="car" value="Легковая" checked><span>Легковая</span></label><label class="chip"><input type="radio" name="car" value="Кроссовер"><span>Кроссовер</span></label><label class="chip"><input type="radio" name="car" value="Внедорожник"><span>Внедорожник</span></label><label class="chip"><input type="radio" name="car" value="Газель"><span>Газель</span></label></div></fieldset><fieldset class="field rise"><span>Радиус</span><div class="chips"><label class="chip"><input type="radio" name="radius" value="R13–R14"><span>R13–R14</span></label><label class="chip"><input type="radio" name="radius" value="R15–R16" checked><span>R15–R16</span></label><label class="chip"><input type="radio" name="radius" value="R17–R18"><span>R17–R18</span></label><label class="chip"><input type="radio" name="radius" value="R19+"><span>R19+</span></label></div></fieldset><fieldset class="field rise"><span>Что&nbsp;нужно</span><div class="chips"><label class="chip"><input type="checkbox" name="service" value="Переобувка"><span>Переобувка</span></label><label class="chip"><input type="checkbox" name="service" value="Балансировка"><span>Балансировка</span></label><label class="chip"><input type="checkbox" name="service" value="Ремонт прокола"><span>Ремонт прокола</span></label><label class="chip"><input type="checkbox" name="service" value="Хранение шин"><span>Хранение шин</span></label></div></fieldset><label class="field rise"><span>Дата</span><input class="text" type="date" name="date" placeholder=""></label><fieldset class="field rise"><span>Время</span><div class="chips"><label class="chip"><input type="radio" name="time" value="Утро" checked><span>Утро</span></label><label class="chip"><input type="radio" name="time" value="День"><span>День</span></label><label class="chip"><input type="radio" name="time" value="Вечер"><span>Вечер</span></label></div></fieldset><label class="field rise"><span>Имя и&nbsp;номер машины</span><input class="text" type="text" name="name" placeholder="Например, Артур, А123АА"></label></form>
+    </div>
+    <aside class="ticket">
+      <div class="ticket__card rise">
+        <span class="label">Ваша заявка</span>
+        <ul class="ticket__lines" id="lines"></ul>
+        <div class="send"><a class="btn " href="#" data-send="whatsapp"><span class="btn__fill"></span><span class="btn__label">Отправить в&nbsp;WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="https://max.ru/u/f9LHodD0cOKNv38ZNkeYqB5QRJxu8jvvJtW4Ja00f8wJpYmtcsqO_8X6XLQ" data-send="max" target="_blank" rel="noopener"><span class="btn__fill"></span><span class="btn__label">Написать в&nbsp;MAX</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn--ghost" href="tel:+78362335275" ><span class="btn__fill"></span><span class="btn__label">Позвонить</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+        <p><small id="copied">Время подтвердит мастер, оплата на&nbsp;месте</small></p>
+      </div>
+    </aside>
+  </div>
+</section>
+<section id="about">
+  <div class="head"><h2 class="rise">СТО Машин<br>в&nbsp;цифрах</h2><p class="muted rise">Данные из&nbsp;открытой карточки 2ГИС на&nbsp;4&nbsp;октября 2026&nbsp;года.</p></div>
+  <div class="facts"><div class="fact rise"><b>4,9</b><p class="muted">рейтинг в&nbsp;2ГИС по&nbsp;132&nbsp;отзывам</p></div><div class="fact rise"><b>09–20</b><p class="muted">работаем каждый день</p></div><div class="fact rise"><b>132</b><p class="muted">отзывов гостей в&nbsp;2ГИС</p></div></div>
+  <div class="gallery"><figure><img src="img/g1.jpg" alt="СТО Машин" loading="lazy"></figure><figure><img src="img/g2.jpg" alt="СТО Машин" loading="lazy"></figure><figure><img src="img/g3.jpg" alt="СТО Машин" loading="lazy"></figure><figure><img src="img/g4.jpg" alt="СТО Машин" loading="lazy"></figure></div>
+</section>
+<section id="contacts">
+  <div class="contacts">
+    <h2 class="rise">Как&nbsp;нас<br>найти</h2>
+    <div class="clist rise"><a href="tel:+78362335275"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+7 836 233-52-75</a><a href="https://wa.me/79278873758" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>WhatsApp</a><a href="https://max.ru/u/f9LHodD0cOKNv38ZNkeYqB5QRJxu8jvvJtW4Ja00f8wJpYmtcsqO_8X6XLQ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>MAX</a><a href="https://2gis.ru/firm/70000001038041971" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Йошкар-Ола, Комсомольская улица, 77/2</a><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Ежедневно 09:00–20:00</span></div>
+  </div>
+</section>
+</main>
+<footer><span>СТО Машин, Йошкар-Ола</span><span>Демо-версия сайта. Фото и тексты из открытой карточки 2ГИС, заменим на ваши.</span></footer>
+<script type="application/json" id="cfg">{"greeting": "Здравствуйте! Хочу записаться в «СТО Машин».", "whatsapp": "79278873758", "fields": [{"id": "car", "type": "single", "title": "Машина"}, {"id": "radius", "type": "single", "title": "Радиус"}, {"id": "service", "type": "multi", "title": "Что нужно"}, {"id": "date", "type": "date", "title": "Дата"}, {"id": "time", "type": "single", "title": "Время"}, {"id": "name", "type": "text", "title": "Имя и номер машины"}]}</script>
+<script src="script.js"></script>
+</body>
+</html>
