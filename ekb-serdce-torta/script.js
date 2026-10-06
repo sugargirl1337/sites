@@ -63,9 +63,24 @@
         window.open(`https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
         return;
       }
-      try { await navigator.clipboard.writeText(text); } catch (_) { /* clipboard may be blocked */ }
       const note = document.getElementById('copied');
-      note.textContent = 'Текст заявки скопирован, вставьте его в чат';
+      try {
+        await navigator.clipboard.writeText(text);
+        note.textContent = 'Текст заявки скопирован, вставьте его в чат';
+      } catch (_) {
+        note.textContent = 'Автоматически скопировать не удалось. Скопируйте текст ниже и вставьте в чат.';
+        let fallback = document.getElementById('request-copy');
+        if (!fallback) {
+          fallback = document.createElement('textarea');
+          fallback.id = 'request-copy';
+          fallback.className = 'text';
+          fallback.rows = 8;
+          fallback.readOnly = true;
+          fallback.setAttribute('aria-label', 'Текст обращения для копирования');
+          note.parentElement.after(fallback);
+        }
+        fallback.value = text;
+      }
     });
   });
 })();

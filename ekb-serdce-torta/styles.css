@@ -156,3 +156,24 @@ footer { padding: var(--s4) var(--pad); font-size: 13px; opacity: .6; display: f
   .btn { width: 100%; justify-content: center; }
   .ticket__card { padding: var(--s3); }
 }
+
+/* Opt-in composition: food photography never shares the text area. */
+.hero--split { height: 100svh; min-height: 560px; display: grid; grid-template-columns: 3fr 2fr; }
+.hero--split .hero__media { grid-column: 2; grid-row: 1; position: relative; height: 100%; min-height: 0; }
+.hero--split .hero__media img { transform: none; }
+.hero--split .hero__veil { display: none; }
+.hero--split .hero__content { grid-column: 1; grid-row: 1; position: static; height: auto; min-width: 0; color: var(--ink); text-shadow: none; }
+.hero--split h1 { font-size: clamp(48px, 6.3vw, 100px); }
+.hero--split .btn__fill { background: var(--ink); }
+@media (max-width: 800px) {
+  .hero--split { min-height: 0; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(80px, 1fr) auto; gap: 16px; padding: 16px; }
+  .hero--split .hero__content { display: contents; }
+  .hero--split .top { grid-column: 1; grid-row: 1; color: var(--ink); }
+  .hero--split .nav a:not(:last-child) { display: none; }
+  .hero--split .hero__media { grid-column: 1; grid-row: 2; }
+  .hero--split .hero__content > div:last-child { grid-column: 1; grid-row: 3; min-width: 0; color: var(--ink); }
+  .hero--split h1 { font-size: clamp(32px, 9.5vw, 52px); line-height: .95; }
+  .hero--split .hero__lead { margin-top: 12px; font-size: 15px; line-height: 1.4; }
+  .hero--split .hero__cta { margin-top: 16px; gap: 8px; }
+  .hero--split .hero__sub { font-size: 12px; }
+}
